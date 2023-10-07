@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#check natural error, return 0
+if [ $? -ne 0 ]
+	then
+	    echo "Error occurred."
+		set -e
+fi
+
+find ~/music/ -type f -iname "*.flac" -printf \" -print0 -printf \" -printf \  -exec /sbin/mplayer -ni -msgcolor -shuffle -ao alsa -vo null {} \;
