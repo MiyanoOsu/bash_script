@@ -1,0 +1,20 @@
+#!/bin/sh
+
+DIR=~/usb
+DEV=/dev/sda1
+
+set -e
+
+if [ ! -d $DIR ]
+then
+    mkdir -p $DIR
+fi
+
+if [ -z $(findmnt -M $DIR | grep -o $DEV) ]
+then
+    sudo mount $DEV $DIR
+    thunar $DIR
+else
+    sudo umount $DIR
+    echo umount successful!
+fi

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+echo which device? 
+read DEV
+
+mount | grep /dev/$DEV > /dev/null && echo mounted || echo unmounted
