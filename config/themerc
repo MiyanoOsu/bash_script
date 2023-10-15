@@ -68,9 +68,12 @@ window.active.grip.bg.color: #222B39
 window.active.button.unpressed.bg: Flat solid
 window.active.button.unpressed.bg.color: #222B39
 window.active.button.unpressed.bg.border.color: #222B39
-window.active.button.close.unpressed.image.color: #da4167
-window.active.button.max.unpressed.image.color: #d56f3e
-window.active.button.iconify.unpressed.image.color: #eab464
+window.active.button.close.unpressed.image.color: #9b5de5
+#da4167
+window.active.button.max.unpressed.image.color: #f15bb5
+#d56f3e
+window.active.button.iconify.unpressed.image.color: #fee440
+#eab464
 window.active.button.shade.unpressed.image.color: #388781
 window.active.button.desk.unpressed.image.color: #388781
 
@@ -95,7 +98,8 @@ window.active.button.desk.pressed.image.color: #388781
 window.active.button.toggled.unpressed.bg: Flat solid
 window.active.button.toggled.unpressed.bg.color: #222B39
 window.active.button.toggled.unpressed.bg.border.color: #222B39
-window.active.button.max.toggled.unpressed.image.color: #d56f3e
+window.active.button.max.toggled.unpressed.image.color: #f15bb5
+#d56f3e
 window.active.button.shade.toggled.unpressed.image.color: #388781
 window.active.button.desk.toggled.unpressed.image.color: #388781
 
