@@ -1,0 +1,9 @@
+#!/bin/sh
+
+qemu-system-arm -kernel ~/qemu/kernel-4.4.34 \
+	-cpu arm1176 -m 256 -machine versatilepb	\
+	-append "root=/dev/sda2 rootfstype=ext4 rw" \
+	-hda ~/qemu/main.img \
+	-hdb ~/qemu/data.img \
+	-net nic -net user,hostfwd=tcp::8026-:22 \
+	-nographic
