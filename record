@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "file name? "
+read name
+ffmpeg -f x11grab -video_size 1366x768 -framerate 60 -i :0.0 -f pulse -i default -c:v libx264 -pix_fmt yuv420p -preset veryfast -c:a aac $name.mp4
