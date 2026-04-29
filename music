@@ -1,0 +1,6 @@
+!#/bin/sh
+
+echo "file playlist? "
+read name
+
+ffplay -f concat -safe 0 -i $name -nodisp -autoexit
